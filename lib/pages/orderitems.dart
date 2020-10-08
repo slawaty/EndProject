@@ -32,7 +32,7 @@ class OrderItemsPage extends StatelessWidget {
             return Scaffold(
               drawer: DrawerPage(),
               body: ListView(children: list),
-              appBar: AppBar(title: Text("APP_NAME"),actions: <Widget>[CartIcon()],),
+              appBar: AppBar(title: Text("Order"),actions: <Widget>[CartIcon()],),
             );
           }
         },

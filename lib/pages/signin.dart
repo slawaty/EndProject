@@ -39,7 +39,7 @@ class _SignInState extends State<SignIn> {
                       'password', _passwordController),
                   Padding(
                     padding:
-                        const EdgeInsets.only(top: 40, right: 50, left: 200),
+                        const EdgeInsets.only(top: 40, right: 100, left: 100),
                     child: Container(
                       alignment: Alignment.bottomRight,
                       height: 50,
@@ -78,13 +78,13 @@ class _SignInState extends State<SignIn> {
                       ),
                     ),
                   ),
-                  GoogleSignInSection("Login"),
-                  RedirectPage(SignUpPage(), 'Sign Up', 'New User?'),
+                  // GoogleSignInSection("Login"),
+                  RedirectPage(SignUpPage(), 'Sign Up', 'New User ?'),
                   Container(
                     padding: EdgeInsets.only(left: 20),
                     child: Row(
                       children: <Widget>[
-                        Text("Forgot Password?"),
+                        Text("Forgot Password ?"),
                         FlatButton(
                           child: Text(
                             "Reset",

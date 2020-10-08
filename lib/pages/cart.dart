@@ -63,7 +63,8 @@ class _CartPageState extends State<CartPage> {
             }
             return Scaffold(
               drawer: DrawerPage(),
-              appBar: AppBar(title: Text("APP_NAME"), actions: <Widget>[
+              appBar: AppBar(title: Text("Cart"), actions: <Widget>[
+                
                 Padding(
                     padding: EdgeInsets.only(right: 20.0),
                     child: GestureDetector(
@@ -81,10 +82,8 @@ class _CartPageState extends State<CartPage> {
               body: Container(
                 child: ListView(
                   children: <Widget>[
+                    
                     Container(
-                      height: 50,
-                      width: double.infinity,
-                      color: Colors.black,
                       child: StreamBuilder<List<String>>(
                           stream: cart.updateShops(user.uid),
                           builder: (context, snapshots) {
@@ -100,6 +99,7 @@ class _CartPageState extends State<CartPage> {
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
                                       for (String i in snapshots.data)
+                                        
                                         Container(
                                           padding: const EdgeInsets.only(
                                               left: 4.0, right: 4.0),
@@ -112,6 +112,7 @@ class _CartPageState extends State<CartPage> {
                             }
                           }),
                     ),
+                   
                     Container(
                       child: Column(
                         children: list,
@@ -120,6 +121,7 @@ class _CartPageState extends State<CartPage> {
                   ],
                 ),
               ),
+              
               bottomNavigationBar: BottomAppBar(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,

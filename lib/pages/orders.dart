@@ -33,7 +33,7 @@ class OrdersPage extends StatelessWidget {
               drawer: DrawerPage(),
               body: ListView(children: list),
               appBar: AppBar(
-                title: Text("APP_NAME"),
+                title: Text("Order History"),
                 actions: <Widget>[CartIcon()],
               ),
             );

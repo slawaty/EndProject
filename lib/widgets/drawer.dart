@@ -114,26 +114,26 @@ class DrawerPage extends StatelessWidget {
                       },
                     )
                   : Container(),
-              ExpansionTile(
-                trailing: Icon(Icons.settings),
-                title: Text("Location Settings",
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.w400)),
-                children: <Widget>[
-                  Consumer<LocationModel>(builder: (context, location, child) {
-                    return SliderContainer();
-                  }),
-                  RaisedButton(
-                  child: Text("Update location"),
-                  color: Colors.amber,
-                  onPressed: () {
-                    Provider.of<LocationModel>(context,listen: false).getposition();
-                    Navigator.pop(context);
-                    Scaffold.of(context).showSnackBar(SnackBar(content: Text("Location updated")));
-                  },
-                )
-                ],
-              ),
+              // ExpansionTile(
+              //   trailing: Icon(Icons.settings),
+              //   title: Text("Location Settings",
+              //       style:
+              //           TextStyle(fontSize: 20, fontWeight: FontWeight.w400)),
+              //   children: <Widget>[
+              //     Consumer<LocationModel>(builder: (context, location, child) {
+              //       return SliderContainer();
+              //     }),
+              //     RaisedButton(
+              //     child: Text("Update location"),
+              //     color: Colors.amber,
+              //     onPressed: () {
+              //       Provider.of<LocationModel>(context,listen: false).getposition();
+              //       Navigator.pop(context);
+              //       Scaffold.of(context).showSnackBar(SnackBar(content: Text("Location updated")));
+              //     },
+              //   )
+              //   ],
+              // ),
               ListTile(
                 title: Text(
                   "Sign out",
