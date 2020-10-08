@@ -22,7 +22,7 @@ class _AddItemPageFormState extends State<AddItemPageForm> {
   String itemname;
   String description;
   double price;
-  double originalPrice;
+  // double originalPrice;
   String imageurl = '';
   File itemimage;
   int id;
@@ -92,7 +92,7 @@ class _AddItemPageFormState extends State<AddItemPageForm> {
       child: ListView(children: [
         TextFieldWidgetWithValidation('Name', nameController),
         NumberFieldWidgetWithValidation('price', priceController),
-        NumberFieldWidgetWithValidation('original price', mrpController),
+        // NumberFieldWidgetWithValidation('original price', mrpController),
         MultilineTextWidgetWithValidation('description', descriptionController),
         ItemImagePicker(
           notifyParent: setUrl,
@@ -120,7 +120,7 @@ class _AddItemPageFormState extends State<AddItemPageForm> {
                         await uploadImage();
                         itemname = nameController.text;
                         price = double.parse(priceController.text);
-                        originalPrice = double.parse(mrpController.text);
+                        // originalPrice = double.parse(mrpController.text);
                         description = descriptionController.text;
                         id = new DateTime.now().millisecondsSinceEpoch;
                         if (imageurl == "") {
@@ -165,7 +165,7 @@ class _AddItemPageFormState extends State<AddItemPageForm> {
     var user = Provider.of<User>(context, listen: false);
     Shop shop = await shops.getShopByuserId(user.uid);
     shop.items.add(
-        Item(itemname, price, description, originalPrice, imageurl), user.uid);
+        Item(itemname, price, description, imageurl), user.uid); //  Item(itemname, price, description, originalPrice, imageurl), user.uid);
   }
 }
 

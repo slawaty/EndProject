@@ -76,19 +76,9 @@ class _MenuItemState extends State<MenuItem> {
                     Padding(
                       padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                       child: Text(
-                        item.originalPrice.toString(),
-                        style: TextStyle(
-                            decoration: TextDecoration.lineThrough,
-                            color: Colors.red[800]),
+                        item.price.toString(), 
                       ),
                     ),
-                    Padding(
-                        padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                        child: Text(
-                          item.price.toString(),
-                          style:
-                              TextStyle(fontSize: 20, color: Colors.green[800]),
-                        )),
                   ],
                 ),
                 Consumer<CartModel>(builder: (context, cartp, child) {

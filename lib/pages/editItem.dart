@@ -79,7 +79,7 @@ class _editItemPageFormState extends State<editItemPageForm> {
   void initState() {
     nameController.text = widget.item.name;
     priceController.text = "${widget.item.price}";
-    mrpController.text = "${widget.item.originalPrice}";
+    // mrpController.text = "${widget.item.originalPrice}";
     descriptionController.text = widget.item.description;
 
     return super.initState();
@@ -135,8 +135,8 @@ class _editItemPageFormState extends State<editItemPageForm> {
                           widget.item.name = nameController.text;
                           widget.item.price =
                               double.parse(priceController.text);
-                          widget.item.originalPrice =
-                              double.parse(mrpController.text);
+                          // widget.item.originalPrice =
+                          //     double.parse(mrpController.text);
                           widget.item.description = descriptionController.text;
                           var user = Provider.of<User>(context, listen: false);
                           ItemsModel model =

@@ -88,7 +88,7 @@ class _CartItemState extends State<CartItem> {
   Widget buttonIncrementDecrement(CartModel cart, Orderitem item) {
     getCount(cart, item);
     return Padding(
-      padding: EdgeInsets.fromLTRB(50, 0, 0, 0),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
       child: Container(
         child: Row(children: [
           FlatButton(

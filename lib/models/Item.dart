@@ -6,7 +6,7 @@ class Item {
   String name;
   String description;
   double price;
-  double originalPrice;
+  // double originalPrice;
   String imageurl;
   String id;
   String shopid;
@@ -15,7 +15,7 @@ class Item {
     this.name,
     this.price,
     this.description,
-    this.originalPrice,
+    // this.originalPrice,
     this.imageurl,
   ) : id = uuid.v1();
 
@@ -23,7 +23,7 @@ class Item {
     name = data["name"];
     description = data["description"];
     price = data["price"];
-    originalPrice = data["originalPrice"];
+    // originalPrice = data["originalPrice"];
     imageurl = data["imageurl"];
     id = data["id"];
     shopid = data["shopid"];
@@ -37,11 +37,11 @@ class Item {
   }
 
   void update(
-      {newname, newprice, newdescription, neworiginalprice, newimageurl}) {
+      {newname, newprice, newdescription, newimageurl}) { //      {newname, newprice, newdescription, neworiginalprice, newimageurl}) {
     name = newname;
     price = newprice;
     description = newdescription;
-    neworiginalprice = neworiginalprice;
+    // neworiginalprice = neworiginalprice;
     newimageurl = newimageurl;
   }
 
@@ -50,7 +50,7 @@ class Item {
       "name": name,
       "description": description,
       "price": price,
-      "originalPrice": originalPrice,
+      // "originalPrice": originalPrice,
       "imageurl": imageurl,
       "id": id,
       "shopid": shopid,

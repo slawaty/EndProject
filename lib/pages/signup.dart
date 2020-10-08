@@ -38,7 +38,7 @@ class _SignUpState extends State<SignUp> {
                       'password', _passwordController),
                   Padding(
                     padding:
-                        const EdgeInsets.only(top: 40, right: 50, left: 200),
+                        const EdgeInsets.only(top: 40, right: 100, left: 100),
                     child: _isLoading
                         ? Center(
                             child: CircularProgressIndicator(),
@@ -88,8 +88,8 @@ class _SignUpState extends State<SignUp> {
                   )
                 ],
               ),
-              GoogleSignInSection("Signup"),
-              RedirectPage(SignInPage(), 'Sign in', 'Have we met before'),
+              // GoogleSignInSection("Signup"),
+              // RedirectPage(SignInPage(), 'Sign in', 'Have we met before'),
             ],
           ),
         ),
