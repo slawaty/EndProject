@@ -122,13 +122,16 @@ class _CartPageState extends State<CartPage> {
                 ),
               ),
               
+
+              
+              
               bottomNavigationBar: BottomAppBar(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: currentShop != null
                       ? <Widget>[
                           Text(
-                            'Total price : ',
+                            'ราคาทั้งหมด : ',
                             style: TextStyle(fontSize: 16),
                           ),
                           Text(
@@ -152,7 +155,7 @@ class _CartPageState extends State<CartPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
                                 Text(
-                                  "checkout",
+                                  "Checkout",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 18,

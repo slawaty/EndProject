@@ -90,10 +90,10 @@ class _editItemPageFormState extends State<editItemPageForm> {
     return Form(
       key: _formKey,
       child: ListView(children: [
-        TextFieldWidgetWithValidation('Name', nameController),
-        NumberFieldWidgetWithValidation('price', priceController),
-        NumberFieldWidgetWithValidation('original price', mrpController),
-        MultilineTextWidgetWithValidation('description', descriptionController),
+        TextFieldWidgetWithValidation('ชื่อสินค้า', nameController),
+        NumberFieldWidgetWithValidation('ราคา', priceController),
+        // NumberFieldWidgetWithValidation('original price', mrpController),
+        MultilineTextWidgetWithValidation('ข้อมูลสินค้า', descriptionController),
         Container(
           margin: EdgeInsets.only(bottom: 20, top: 20),
           child: Center(

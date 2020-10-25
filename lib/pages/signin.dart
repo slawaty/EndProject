@@ -79,7 +79,7 @@ class _SignInState extends State<SignIn> {
                     ),
                   ),
                   // GoogleSignInSection("Login"),
-                  RedirectPage(SignUpPage(), 'Sign Up', 'New User ?'),
+                  RedirectPage(SignUpPage(),'Sign Up','New User ?'),
                   Container(
                     padding: EdgeInsets.only(left: 20),
                     child: Row(
@@ -88,7 +88,7 @@ class _SignInState extends State<SignIn> {
                         FlatButton(
                           child: Text(
                             "Reset",
-                            style: TextStyle(fontSize: 20),
+                            style: TextStyle(fontSize: 18),
                           ),
                           onPressed: () {
                             if (EmailValidator.validate(

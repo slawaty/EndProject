@@ -21,7 +21,7 @@ class DrawerPage extends StatelessWidget {
                   title: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      "Hello ${user.name}",
+                      "User ${user.name}",
                       style: TextStyle(fontSize: 24),
                     ),
                   ),

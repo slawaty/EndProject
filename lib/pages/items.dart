@@ -136,7 +136,7 @@ class Itemssearch extends SearchDelegate<Item> {
 
   @override
   Widget buildResults(BuildContext context) {
-    return Center(child: Text("hello"));
+    return Center(child: Text(""));
   }
 
   @override

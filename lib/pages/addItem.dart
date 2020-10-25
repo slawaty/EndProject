@@ -90,10 +90,10 @@ class _AddItemPageFormState extends State<AddItemPageForm> {
     return Form(
       key: _formKey,
       child: ListView(children: [
-        TextFieldWidgetWithValidation('Name', nameController),
-        NumberFieldWidgetWithValidation('price', priceController),
+        TextFieldWidgetWithValidation('ชื่อสินค้า', nameController),
+        NumberFieldWidgetWithValidation('ราคา', priceController),
         // NumberFieldWidgetWithValidation('original price', mrpController),
-        MultilineTextWidgetWithValidation('description', descriptionController),
+        MultilineTextWidgetWithValidation('ข้อมูลสินค้า', descriptionController),
         ItemImagePicker(
           notifyParent: setUrl,
           fromEdit: false,

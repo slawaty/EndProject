@@ -45,7 +45,7 @@ class _Order_widgetState extends State<Order_widget> {
           ),
           Container(
               child: Text(
-            'Price : ' + order.price.toString(),
+            'ราคา : ' + order.price.toString(),
             style: TextStyle(fontSize: 20, color: Colors.green[800]),
           )),
           FlatButton(

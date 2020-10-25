@@ -46,7 +46,7 @@ class _OrderItemWidgetState extends State<OrderItemWidget> {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    Text("Price"),
+                    Text("ราคา"),
                     Padding(
                         padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                         child: Text(
@@ -59,7 +59,7 @@ class _OrderItemWidgetState extends State<OrderItemWidget> {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    Text("Count"),
+                    Text("จำนวน"),
                     Padding(
                         padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                         child: Text(

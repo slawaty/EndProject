@@ -72,7 +72,7 @@ class _MenuItemState extends State<MenuItem> {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
-                    Text("Price"),
+                    Text("ราคา"),
                     Padding(
                       padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                       child: Text(

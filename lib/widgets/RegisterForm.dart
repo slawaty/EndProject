@@ -82,7 +82,7 @@ class _RegisterFormState extends State<RegisterForm> {
             TextFieldWidgetWithValidation('Shop Name', _shopNameController),
             TextFieldWidgetWithValidation("Owner Name", _ownerNameController),
             number,
-            EmailField(_emailController),
+            // EmailField(_emailController),
             TextFieldWidgetWithValidation(
                 'Tell something about your shop', _descriptionController),
             ItemImagePicker(
